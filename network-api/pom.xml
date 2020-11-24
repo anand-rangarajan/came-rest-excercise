@@ -37,16 +37,6 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${springfox-swagger-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${springfox-swagger-version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.camel.springboot</groupId>
             <artifactId>camel-json-validator-starter</artifactId>
             <version>${camel.version}</version>
