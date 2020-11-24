@@ -5,7 +5,7 @@ Network API is front end api. It exposes following rest apis on 8080 port:-
 * /network-api/addDevice
 * /network-api/removeDevice
 
-Devices-Repo-api is backend api. It exposes rest apis for CRUD on 8081 port:-
+Device-api is backend api. It exposes rest apis for CRUD on 8081 port:-
 * /device-api/getDevices
 * /device-api/addDevice
 * /device-api/removeDevice
