@@ -40,10 +40,9 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
 3. cd target
 4. java -jar network-api.jar
 
-___API URL /network-api/addDevice___ http://http://localhost:8080/network-api/addDevice
-
+* API URL /network-api/addDevice___ http://http://localhost:8080/network-api/addDevice
 * HTTP POST
-* ____JSON REQUEST-Happy Scenario___
+* ___Happy Scenario___
 
 {
         "deviceId": 1,
@@ -51,21 +50,20 @@ ___API URL /network-api/addDevice___ http://http://localhost:8080/network-api/ad
         "type": "Switch"
     }
     
-* ____JSON RESPONSE-Happy Scenario___
+* ___Happy Scenario___
 
 {
     "status": "SUCCESS",
     "message": "Added Device01 successfully."
 }
 
-
-* ___JSON REQUEST-Error Scenario___
+* ___Error Scenario___
 {
         "deviceId": 2,
         "type": "Switch"
     }
     
-* ___JSON RESPONSE-Error Scenario___
+* __Error Scenario___
 
 {
     "timestamp": "2020-11-24T08:31:53.517+0000",
@@ -75,11 +73,9 @@ ___API URL /network-api/addDevice___ http://http://localhost:8080/network-api/ad
     "path": "/network-api/addDevice"
 }
 
-___API URL /network-api/removeDevice/{deviceId}___ http://http://localhost:8080/network-api/removeDevice/1
-
+* API URL /network-api/removeDevice/{deviceId}___ http://http://localhost:8080/network-api/removeDevice/1
 * HTTP GET
-
-* ____JSON RESPONSE- Happy Scenario___
+* ___Happy Scenario___
 
 {
     "status": "SUCCESS",
@@ -93,10 +89,10 @@ ___API URL /network-api/removeDevice/{deviceId}___ http://http://localhost:8080/
 3. cd target
 4. java -jar device-api.jar
   
-___API URL /device-api/addDevice___ http://localhost:8085/device-api/addDevice
+* API URL /device-api/addDevice___ http://localhost:8085/device-api/addDevice
 
 * HTTP POST
-* ___JSON REQUEST-Happy Scenario___
+* ___Happy Scenario___
 
 {
     "id": 1,
@@ -104,14 +100,11 @@ ___API URL /device-api/addDevice___ http://localhost:8085/device-api/addDevice
      "type" : "Switch"
 }
 
+* RESPONSE:  Added Device01 successfully.
 
-* ____JSON RESPONSE___ Added Device01 successfully.
 
-___API URL /device-api/getDevices___ http://localhost:8081/device-api/getDevices
-
+* API URL /device-api/getDevices___ http://localhost:8081/device-api/getDevices
 * HTTP GET
-
-* ___JSON RESPONSE___
 [
     {
         "id": 1,
@@ -125,21 +118,17 @@ ___API URL /device-api/getDevices___ http://localhost:8081/device-api/getDevices
     }
 ]
 
-___API URL /device-api/getDevice/{id}___ http://localhost:8085/device-api/getdevice/1
-
+* API URL /device-api/getDevice/{id}___ http://localhost:8085/device-api/getdevice/1
 * HTTP GET
-* ___JSON RESPONSE___
-
 {
     "id": 1,
     "name": "Device01",
     "type": "Switch"
 }
 
-___API URL /device-api/removeDevice?{id}___ http://localhost:8085/device-api/removeDevice?deviceId=1
-
+* API URL /device-api/removeDevice?{id}___ http://localhost:8085/device-api/removeDevice?deviceId=1
 * HTTP GET
-* ____JSON RESPONSE___ Device is removed successfully
+* Device is removed successfully
 
 ## Docker ##
 1. docker build -t network-api.jar .

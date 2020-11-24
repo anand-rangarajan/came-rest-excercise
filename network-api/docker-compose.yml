@@ -1,0 +1,9 @@
+version: '3' # specify docker-compose version
+
+services:
+  nginx:
+    build: ./ # specify the directory of the Dockerfile
+    ports:
+      - "8080:8080" # specify port mapping
+    extra_hosts:
+      - "dockerhost:127.0.0.1"

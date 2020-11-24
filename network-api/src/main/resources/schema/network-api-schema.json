@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Network schema",
+  "required": ["deviceId","deviceName","type"],
+  "properties": {
+    "deviceId": {
+      "description": "Unique identifier of the device",
+      "type": "integer"
+    },
+    "deviceName": {
+      "description": "Name of the device",
+      "type": "string"
+    },
+    "type": {
+      "description": "Type of the device",
+      "type": "string"
+    }
+  }
+}

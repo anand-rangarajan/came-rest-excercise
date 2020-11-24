@@ -1,0 +1,10 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+        "deviceId": "id",
+        "deviceName": "name",
+        "type": "type"
+     }
+  }
+]
