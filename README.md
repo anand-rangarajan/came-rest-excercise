@@ -42,29 +42,25 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
 
 * API URL /network-api/addDevice___ http://http://localhost:8080/network-api/addDevice
 * HTTP POST
-* ___Happy Scenario___
-
 {
         "deviceId": 1,
         "deviceName": "Device01",
         "type": "Switch"
-    }
+}
     
-* ___Happy Scenario___
-
+* Response 
 {
     "status": "SUCCESS",
     "message": "Added Device01 successfully."
 }
 
-* ___Error Scenario___
+* Error Scenario
 {
         "deviceId": 2,
         "type": "Switch"
-    }
-    
-* __Error Scenario___
+}
 
+* Response
 {
     "timestamp": "2020-11-24T08:31:53.517+0000",
     "status": 500,
@@ -73,10 +69,8 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
     "path": "/network-api/addDevice"
 }
 
-* API URL /network-api/removeDevice/{deviceId}___ http://http://localhost:8080/network-api/removeDevice/1
+* API URL /network-api/removeDevice/{deviceId}  eg: http://http://localhost:8080/network-api/removeDevice/1
 * HTTP GET
-* ___Happy Scenario___
-
 {
     "status": "SUCCESS",
     "message": "Device removed successfully"
@@ -89,11 +83,8 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
 3. cd target
 4. java -jar device-api.jar
   
-* API URL /device-api/addDevice___ http://localhost:8085/device-api/addDevice
-
+* API URL /device-api/addDevice eg: http://localhost:8085/device-api/addDevice
 * HTTP POST
-* ___Happy Scenario___
-
 {
     "id": 1,
     "name": "Device01",
@@ -102,8 +93,7 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
 
 * RESPONSE:  Added Device01 successfully.
 
-
-* API URL /device-api/getDevices___ http://localhost:8081/device-api/getDevices
+* API URL /device-api/getDevices eg: http://localhost:8081/device-api/getDevices
 * HTTP GET
 [
     {
@@ -118,7 +108,7 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
     }
 ]
 
-* API URL /device-api/getDevice/{id}___ http://localhost:8085/device-api/getdevice/1
+* API URL /device-api/getDevice/{id} eg: http://localhost:8085/device-api/getdevice/1
 * HTTP GET
 {
     "id": 1,
@@ -126,7 +116,7 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
     "type": "Switch"
 }
 
-* API URL /device-api/removeDevice?{id}___ http://localhost:8085/device-api/removeDevice?deviceId=1
+* API URL /device-api/removeDevice?{id} eg: http://localhost:8085/device-api/removeDevice?deviceId=1
 * HTTP GET
 * Device is removed successfully
 
