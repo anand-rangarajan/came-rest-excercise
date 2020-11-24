@@ -40,41 +40,41 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
 3. cd target
 4. java -jar network-api.jar
 
-* API URL /network-api/addDevice___ http://http://localhost:8080/network-api/addDevice
-* HTTP POST
-{
-        "deviceId": 1,
-        "deviceName": "Device01",
-        "type": "Switch"
-}
-    
-* Response 
-{
-    "status": "SUCCESS",
-    "message": "Added Device01 successfully."
-}
+* API URL /network-api/addDevice eg: http://http://localhost:8080/network-api/addDevice
+    * HTTP POST
+    {
+            "deviceId": 1,
+            "deviceName": "Device01",
+            "type": "Switch"
+    }
+        
+    * Response 
+    {
+        "status": "SUCCESS",
+        "message": "Added Device01 successfully."
+    }
 
-* Error Scenario
-{
-        "deviceId": 2,
-        "type": "Switch"
-}
+    * Error Scenario
+    {
+            "deviceId": 2,
+            "type": "Switch"
+    }
 
-* Response
-{
-    "timestamp": "2020-11-24T08:31:53.517+0000",
-    "status": 500,
-    "error": "Internal Server Error",
-    "message": "deviceName: null found, string expected",
-    "path": "/network-api/addDevice"
-}
+    * Response
+    {
+        "timestamp": "2020-11-24T08:31:53.517+0000",
+        "status": 500,
+        "error": "Internal Server Error",
+        "message": "deviceName: null found, string expected",
+        "path": "/network-api/addDevice"
+    }
 
 * API URL /network-api/removeDevice/{deviceId}  eg: http://http://localhost:8080/network-api/removeDevice/1
-* HTTP GET
-{
-    "status": "SUCCESS",
-    "message": "Device removed successfully"
-}
+    * HTTP GET
+    {
+        "status": "SUCCESS",
+        "message": "Device removed successfully"
+    }
 
 ### device-api (backend rest api) ###
 
@@ -84,14 +84,14 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
 4. java -jar device-api.jar
   
 * API URL /device-api/addDevice eg: http://localhost:8085/device-api/addDevice
-* HTTP POST
-{
-    "id": 1,
-    "name": "Device01",
-     "type" : "Switch"
-}
+    * HTTP POST
+    {
+        "id": 1,
+        "name": "Device01",
+        "type" : "Switch"
+    }
 
-* RESPONSE:  Added Device01 successfully.
+    * RESPONSE:  Added Device01 successfully.
 
 * API URL /device-api/getDevices eg: http://localhost:8081/device-api/getDevices
 * HTTP GET
@@ -109,12 +109,12 @@ git clone https://github.com/anand-rangarajan/came-rest-excercise.git
 ]
 
 * API URL /device-api/getDevice/{id} eg: http://localhost:8085/device-api/getdevice/1
-* HTTP GET
-{
-    "id": 1,
-    "name": "Device01",
-    "type": "Switch"
-}
+    * HTTP GET
+    {
+        "id": 1,
+        "name": "Device01",
+        "type": "Switch"
+    }
 
 * API URL /device-api/removeDevice?{id} eg: http://localhost:8085/device-api/removeDevice?deviceId=1
 * HTTP GET
